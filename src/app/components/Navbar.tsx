@@ -37,14 +37,14 @@ const SOCIALS = [
 ]
 
 export default function Navbar() {
-    return <nav className="justify-end sm:mx-auto font-extrabold flex w-full gap-2 p-4">
+    return <nav className="justify-end sm:container mx-auto font-extrabold flex w-full gap-2 p-4">
         <a href="#" className="hidden sm:block mr-2 whitespace-nowrap">Michael Boateng</a>
 
         <div className="hidden sm:flex w-full justify-between">
             <div className="flex gap-4">
                 {
                     NAVLINKS.map((navlink) => (
-                        <a href={navlink.href} className="hover:text-greenbright">{navlink.name}</a>
+                        <a key={navlink.name} href={navlink.href} className="hover:text-greenbright">{navlink.name}</a>
                     ))
                 }
             </div>
@@ -52,7 +52,7 @@ export default function Navbar() {
             <div className=" flex justify-end gap-4">
                 {
                     SOCIALS.map((social) => (
-                        <a href={social.href} target="_blank" className="text-xl hover:text-greenbright">
+                        <a key={social.href} href={social.href} target="_blank" className="text-xl hover:text-greenbright">
                             {social.icon}
                         </a>
                     ))
@@ -63,7 +63,7 @@ export default function Navbar() {
         <div className="flex gap-4 sm:hidden">
             {
                 SOCIALS.map((social) => (
-                    <a href={social.href} target="_blank" className="text-xl hover:text-greenbright">
+                    <a key={social.href} href={social.href} target="_blank" className="text-xl hover:text-greenbright">
                         {social.icon}
                     </a>
                 ))
