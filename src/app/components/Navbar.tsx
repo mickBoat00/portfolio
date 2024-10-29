@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 const NAVLINKS = [
     {
         name: "Home",
-        href: "#"
+        href: "#home"
     },
     {
         name: "About",

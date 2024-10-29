@@ -7,11 +7,6 @@ const ntr = localFont({
   variable: "--font-ntr",
   weight: "100 900",
 });
-// const geistMono = localFont({
-//   src: "./fonts/GeistMonoVF.woff",
-//   variable: "--font-geist-mono",
-//   weight: "100 900",
-// });
 
 export const metadata: Metadata = {
   title: "Mike",
